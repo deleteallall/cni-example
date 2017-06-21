@@ -19,15 +19,6 @@ const (
 	BinDelPath = "/opt/cni/bin/example01-del.sh"
 )
 
-type CmdArgs struct {
-	ContainerID string
-	Netns       string
-	IfName      string
-	Args        string
-	Path        string
-	StdinData   []byte
-}
-
 func cmdAdd(args *skel.CmdArgs) error {
 	prettyPrint("Begin to add")
 
